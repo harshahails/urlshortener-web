@@ -1,0 +1,10 @@
+<h2>Url Shortener</h2>
+<p>Provide the URL to be shortened...</p>
+<input [(ngModel)] = "url"
+(keyup.enter) ="postUrl(url)"
+type="text"
+ class="form-control"
+ >
+<br>
+ <p>The shortened url is : ...</p>
+ <input type="text" class="form-control" value={{smallLink}} readonly>
